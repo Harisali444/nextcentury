@@ -616,6 +616,9 @@ ul.footer-social-icon li a img {
     line-height: 1;
 }
 
+.privacy-links ul li:last-child a {
+    border-right: 0px;
+}
 .copyright-text{
     font-weight: 400;
     font-size: 13px;
@@ -871,7 +874,8 @@ ul.menu-icons li a span.badge {
 
 .menu-Bar span {
     display: block;
-    height: 4px;
+    height: 2px;
+    margin-bottom: 2px;
     width: 100%;
     background: var(--bg-dark);
     position: absolute;
@@ -886,14 +890,17 @@ ul.menu-icons li a span.badge {
 .menu-Bar span:nth-child(2) {
     top: 8px;
     transform-origin: left;
+    width: 75%;
 }
 
 .menu-Bar span:nth-child(3) {
+    width: 50%;
     top: 16px;
 }
 
 .menu-Bar.open span {
     background: var(--praimry-color);
+    width: 100%;
 }
 
 .menu-Bar.open span:nth-child(1) {
@@ -1090,8 +1097,8 @@ img.hero-leaf-bottom {
     bottom: 0px;
     width: 150px;
     right: 10px;
-    animation-name: floatingBottom;
-    animation-duration: 3s;
+    animation-name: floatingTop;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
@@ -2827,7 +2834,7 @@ button.change-image {
         top: 0;
         bottom: 0;
         margin: auto;
-        background: var(--bg-dark);
+        background: var(--text-dark-primary);
         height: 100vh;
         display: flex;
         align-items: center;
@@ -2851,6 +2858,11 @@ button.change-image {
         font-size: 15px;
         text-transform: capitalize;
     }
+    .main-header .menu li:last-child a {
+        background-color: var(--praimry-color);
+        color: white;
+        padding: 12px 20px;
+    }
     /* .logo img {
     max-width: 50%;
 } */
@@ -2867,8 +2879,8 @@ button.change-image {
     header .main-header ul.menu>li a {
         color: #fff;
         padding: 0px;
-        font-size: 30px;
-        line-height: 50px;
+        font-size: 25px;
+        line-height: 40px;
     }
     header .main-header ul.menu>li a:before {
         display: none;
@@ -2957,12 +2969,27 @@ button.change-image {
 }
 
 @media (max-width:767px) {
-    ul.menu-icons li:first-child {
-        display: none !important;
-    }
     .section-padding {
         padding-top: 40px;
         padding-bottom: 40px;
+    }
+    span.text-bg-white {
+        background-size: 100% 40px;
+        line-height: 50px;
+    }
+    img.hero-leaf-bottom {
+        bottom: 0px;
+        left: -10px;
+    }
+    img.hero-leaf-top {
+        top: 0px;
+        left: -20px;
+    }
+
+
+
+    ul.menu-icons li:first-child {
+        display: none !important;
     }
     .blog-slider button.slick-prev.slick-arrow::after {
         top: -35px;
