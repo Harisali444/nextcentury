@@ -81,7 +81,9 @@
 .alert-text {
     color: var(--alert-text) !important;
 }
-
+.line-height-1{
+    line-height: 1.3 !important; 
+}
 .btn.btn-primary {
     /* background-color: var(--praimry-color); */
     background: var(--praimry-color);
@@ -254,6 +256,7 @@ span {
     font-size: 55px;
     line-height: 1.1;
     letter-spacing: -0.02em;
+    display: inline-block;
     font-family: 'space', sans-serif;
 }
 
@@ -1216,6 +1219,7 @@ span.text-bg-white {
     background-position: top right;
     background-repeat: no-repeat;
     background-image: url(./../images/sound-arrow.png);
+    padding-right: 25px;
 }
 .provide-slider ul.slick-dots {
     padding-top: 20px;
@@ -1330,7 +1334,7 @@ section.customize-plan-section::before {
     left: 0; */
     margin: auto;
     z-index: 1;
-    animation: cloudPositionLeft 20s infinite linear reverse;
+    animation: cloudPositionLeft 100s infinite linear reverse;
 }
 
 @keyframes cloudPositionLeft {
@@ -1392,6 +1396,59 @@ section.customize-plan-section::before {
     text-transform: uppercase;
     color: #000000;
 }
+
+/* key featured section */
+
+.key-features-section{
+    background-position: bottom;
+    background-image: url(./../images/double-cloud.png);
+    background-size: cover;
+}
+.key-features-section h3.primary-heading {
+    font-size: 30px;
+    background-size: 30px;
+    background-position: 89% 0px;
+    padding-top: 10px;
+}
+.key-colm img {
+    width: 150px;
+    height: 150px;
+    object-fit: scale-down;
+}
+.key-colm h4 {
+    font-weight: 400;
+    padding: 0px 10px;
+    font-size: 18px;
+    line-height: 1.4;
+    font-family: 'space';
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+.key-colm {
+    border-right: 4px solid #B7B7B7;
+}
+.key-colm:last-child {
+    border-right: 0px;
+}
+
+/* procedure section */
+section.procedure-section {
+    background-color: #DCF0FF;
+    margin-top: -15px;
+}
+
+.procedure-point h4 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.3;
+    color: #2F2F2F;
+    opacity: 0.8;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
 
 /**** portfolio section *****/
 .portfolio-dummycard {

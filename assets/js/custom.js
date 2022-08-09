@@ -230,6 +230,6 @@ btn.on('click', function(e) {
 
 $(document).ready(function(){
     for(i = 0; i < 35; i++) {
-      $('.portfolio-boxes').append("<div class='col-md-3 text-center mb-4 px-sm-2 px-4'><figure><img src='./assets/images/portfolio-box.png' width='100%' /></figure></div>");
+      $('.portfolio-boxes').append("<div class='col-md-3 text-center mb-4 px-sm-2 px-4'><figure class='px-2'><img src='./assets/images/portfolio-box.png' width='100%' /></figure></div>");
     }
   });
