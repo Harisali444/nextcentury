@@ -1261,6 +1261,137 @@ span.text-bg-white {
     display: inline-block;
 }
 
+/* customize section */
+section.customize-plan-section {
+    background: #F3F3F3;
+    box-shadow: 0px 0px 44px rgb(0 0 0 / 25%);
+    margin-top: 120px;
+    position: relative;
+}
+section.customize-plan-section::before {
+    content: '';
+    position: absolute;
+    width: 750px;
+    height: 280px;
+    background-image: url(./../images/customize-plan-bg.png);
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: 35px 0px;
+    transition: all ease-in-out .5s;
+    animation: floatingCharacter 4s linear infinite;
+    /* animation-name: floatingCharacter;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; */
+}
+@keyframes floatingCharacter {
+    0% {
+        background-size: 85%;
+    }
+    50% {
+        background-size: 90%;
+    }
+    100% {
+        background-size: 95%;
+    }
+}
+.ask-character img{
+    margin-top: -90px;
+}
+.action-btns li {
+    margin: 0px 15px;
+}
+.action-btns li a {
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #505050;
+}
+
+/* Package section */
+
+.package-section{
+    background-color: #f7f8fd;
+}
+.package-section .container{
+    position: relative;
+    z-index: 1;
+}
+.package-section::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 240px;
+    background-image: url(./../images/clouds.png);
+    left: 0px;
+    background-size: cover;
+    top: 0px;
+    /* right: 0;
+    left: 0; */
+    margin: auto;
+    z-index: 1;
+    animation: cloudPositionLeft 20s infinite linear reverse;
+}
+
+@keyframes cloudPositionLeft {
+    to {
+        left: 0%;
+    }
+    from {
+        left: 100%;
+    }
+}
+.package-section::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 480px;
+    background-position: bottom;
+    background-image: url(./../images/upper-cloud.jpg);
+    left: 0px;
+    background-size: cover;
+    background-color: white;
+    top: 0px;
+    /* z-index: 0; */
+    /* right: 0;
+    left: 0; */
+    margin: auto;
+    /* animation: cloudPositionLeft 20s infinite linear reverse; */
+}
+
+@keyframes cloudPositionLeft {
+    to {
+        left: 0%;
+    }
+    from {
+        left: 100%;
+    }
+}
+
+
+.packge-card {
+    background: #FFFFFF;
+    border-radius: 50px;
+    /* height: 100%; */
+    box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 10%);
+    padding: 20px;
+}
+.packegs-row > .col-md-4:nth-child(1), .packegs-row > .col-md-4:nth-child(1) .packge-card {
+    min-height: 400px !important;
+}
+.packegs-row > .col-md-4:nth-child(2) , .packegs-row > .col-md-4:nth-child(2) .packge-card{
+    min-height: 500px !important;
+}
+.packegs-row > .col-md-4:nth-child(3) , .packegs-row > .col-md-4:nth-child(3) .packge-card{
+    min-height: 600px !important;
+}
+.packge-card h3{
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: #000000;
+}
 
 /**** portfolio section *****/
 .portfolio-dummycard {
