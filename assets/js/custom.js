@@ -196,12 +196,18 @@ $(window).on('load', function() {
 
 });
 
+
+window.onload = function(){
+    document.getElementById('first-btn-portfolio').click();
+}
+
 // Tabbing JS
+
 $('[data-targetit]').on('click', function(e) {
     $(this).addClass('current');
     $(this).siblings().removeClass('current');
     var target = $(this).data('targetit');
-    $('.' + target).siblings('[class^="box-"]').hide();
+    $('.' + target).siblings('[class^="porfolio-"]').hide();
     $('.' + target).fadeIn();
     $(".product-slider").slick("setPosition");
 });
@@ -228,8 +234,8 @@ btn.on('click', function(e) {
       }, 1500);
 });
 
-$(document).ready(function(){
-    for(i = 0; i < 35; i++) {
-      $('.portfolio-boxes').append("<div class='col-md-3 text-center mb-4 px-sm-2 px-4'><figure class='px-2'><img src='./assets/images/portfolio-box.png' width='100%' /></figure></div>");
-    }
-  });
+// $(document).ready(function(){
+//     for(i = 0; i < 35; i++) {
+//       $('.portfolio-boxes').append("<div class='col-md-3 text-center mb-4 px-sm-2 px-4'><figure class='px-2'><img src='./assets/images/portfolio-box.png' width='100%' /></figure></div>");
+//     }
+//   });
