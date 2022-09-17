@@ -1078,9 +1078,9 @@ section.hero-banner .hero-row::after {
     color: #0D0C03;
 }
 
-.hero-banner .hero-row {
+/* .hero-banner .hero-row {
     padding-top: 50px;
-}
+} */
 
 img.hero-leaf-top {
     position: absolute;
@@ -1282,7 +1282,7 @@ section.customize-plan-section::before {
     background-repeat: no-repeat;
     background-position: 35px 0px;
     transition: all ease-in-out .5s;
-    animation: floatingCharacter 4s linear infinite;
+    animation: floatingCharacter 20s linear infinite;
     /* animation-name: floatingCharacter;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -1316,6 +1316,7 @@ section.customize-plan-section::before {
 
 .package-section{
     background-color: #f7f8fd;
+    z-index: 0;
 }
 .package-section .container{
     position: relative;
@@ -1997,6 +1998,11 @@ section.header-short-bg {
     background-image: url(./../images/banner-bg.png);
     background-repeat: no-repeat;
     background-position: bottom;
+}
+
+.main-character{
+    position: relative;
+    bottom: -116px;
 }
 
 .banner-section {
