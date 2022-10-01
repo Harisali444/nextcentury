@@ -282,3 +282,49 @@ $(document).ready(function(){
       });
         
 });
+
+var scrollLink = $('.page-scroll');
+$(window).scroll(function() {
+    var scrollbarLocation = $(this).scrollTop();
+    scrollLink.each(function() {
+        var sectionOffset = $(this.hash).offset().top - 73;
+        if (sectionOffset <= scrollbarLocation) {
+            $(this).parent().addClass('active');
+            $(this).parent().siblings().removeClass('active');
+        }
+    });
+});
+
+
+// :: 5.0 SCROLL LINK ACTIVE CODE
+var scrollLink = $('.page-scroll');
+
+// :: 6.0 SMOOTH SCROLLING ACTIVE CODE
+scrollLink.on('click', function(e) {
+    e.preventDefault();
+    document.getElementById("nav-content").classList.toggle("hidden");
+    $('body,html').animate({
+        scrollTop: $(this.hash).offset().top - 73
+    }, 1500);
+    $(this).parent().addClass('active');
+    $(this).parent().siblings().removeClass('active');
+});
+
+$(function () {
+    'use strict';
+    (function autoChange() {
+      $('.note_list li.active').each(function () {
+        if (! $(this).is(':last-of-type')) {
+          $(this).delay(2000).fadeOut(2000, function () {
+            $(this).removeClass('active').next().addClass('active').fadeIn(2000);
+            autoChange();
+          });
+        } else {
+          $(this).delay(2000).fadeOut(2000, function () {
+            $(this).removeClass('active').parent('.note_list').find('li:eq(0)').addClass('active').fadeIn(2000);
+            autoChange();
+          });
+        }
+      });
+    })();
+  });

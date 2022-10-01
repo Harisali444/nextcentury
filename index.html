@@ -36,15 +36,15 @@
                      </div>
                      <div class="col-lg-9 col-md-9 col-7 pl-0 text-right d-flex justify-content-end align-items-center">
                         <div class="menuWrap">
-                           <ul class="menu">
-                              <li class="home-icon"><a href="#index.php"><i class="fas fa-home"></i> </a></li>
-                              <li><a href="#category.php">Services</a></li>
-                              <li><a href="#about-us.php">About Us</a></li>
-                              <li><a href="#contact-us.php">Styles</a></li>
-                              <li><a href="#contact-us.php">Pricing</a></li>
-                              <li><a href="#contact-us.php">Portfolio</a></li>
-                              <li><a href="#contact-us.php">Process</a></li>
-                              <li><a href="#contact-us.php">Let's Get Started 
+                           <ul class="menu" id="nav-content">
+                              <li class="home-icon"><a class="page-scroll" href="#hero"><i class="fas fa-home"></i> </a></li>
+                              <li><a class="page-scroll" href="#about">About Us</a></li>
+                              <li><a class="page-scroll" href="#services">Services</a></li>
+                              <li><a class="page-scroll" href="#styles">Styles</a></li>
+                              <li><a class="page-scroll" href="#price">Pricing</a></li>
+                              <li><a class="page-scroll" href="#portfolio">Portfolio</a></li>
+                              <li><a class="page-scroll" href="#process">Process</a></li>
+                              <li><a class="page-scroll" href="#contact">Let's Get Started 
                               </a></li>
                            </ul>
                         </div>
@@ -53,14 +53,14 @@
                </div>
             </div>
          </header>
-         <div class="container">
+         <div id="hero" class="container">
             <div class="row align-items-center hero-row mb-5">
                <div class="col-lg-6 col-md-12 order-1 order-sm-0">
                   <div>
                      <h1 class="hero-heading mb-2 pb-4 wow fadeInLeft"> ONE-CLICK SOLUTION FOR ALL YOUR DESIGN NEEDS! WE  <span class="text-primary">ELEVATE</span> </h1>
-                     <div class="d-flex mt-sm-5 mt-1">
+                     <div class="d-flex  mt-sm-5 mt-1">
                         <button class="wow fadeInUp delay-1s btn btn-primary">Get In Touch!</button>
-                        <button class="wow fadeInUp delay-1s btn btn-white ml-4"><i class="fas fa-eye mr-1"></i> How We Work! </button>
+                        <button class="wow fadeInUp delay-1s btn btn-white ml-sm-4 ml-2"><i class="fas fa-eye mr-1"></i> How We Work! </button>
                      </div>
                   </div>
                </div>
@@ -85,12 +85,20 @@
          </div>
       </section>
 
-      <section class="provide-section section-padding">
+      <section id="about" class="provide-section section-padding">
          <div class="container">
             <div class="row">
                <div class="col-lg-6 mb-lg-0 mb-4 wow bounceIn">
                   <div class="">
-                     <h3 class="primary-heading mb-4 text-white sound-bg position-relative">We Provide Top-notch <span class="text-bg-white"> Digital arts</span>   services and anything you could think of in the design world!</h3>
+                     <h3 class="primary-heading mb-4 text-white sound-bg position-relative">We Provide Top-notch <span class="text-bg-white">
+                        <ul class="note_list">
+                           <li class="active"> Digital arts</li>
+                           <li> Illustrations </li>
+                           <li> Logo designs </li>
+                           <li> Web-design </li>
+                           <li> App design </li>
+                         </ul>
+                         </span>   services and anything you could think of in the design world!</h3>
                      <p class="text-white">Our Team is comprised of passionate individuals who have been working in the design industry for many years! Our Designers are well-equipped with the skillset and experience to not only reach but exceed your design requirements! So don’t waste a second... Get a quote of what you’re looking for! It’s absolutely free!  </p>
                      <div class="d-flex mt-3">
                         <button class="wow fadeInUp delay-1s btn rounded-pill btn-white mr-4">View our work </button>
@@ -104,7 +112,7 @@
                         <div class="row w-100 align-items-center mb-4">
                            <div class="col-md-6 text-center order-1 order-sm-0">
                               <!-- <div class="blue-circle"></div> -->
-                              <img src="./assets/images/portfolio/character/2d 0.jpg" />
+                              <img class="rounded shadow-lg" src="./assets/images/portfolio/character/2d 0.jpg" />
                            </div>
                            <div class="col-md-6 order-0 order-sm-1 mb-sm-0 mb-4">
                               <h4 class="secondary-hdng">2D Illustrations</h4>
@@ -117,7 +125,7 @@
                               <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nisl enim, mi sagittis facilisi. Mauris, ultricies in diam auctor vitae tincidunt.</p>
                            </div>
                            <div class="col-md-6 text-center">
-                              <img src="./assets/images/portfolio/character/character 0.jpg" />
+                              <img class="rounded shadow-lg" src="./assets/images/portfolio/character/character 0.jpg" />
                               <!-- <div class="blue-circle"></div> -->
                            </div>
                         </div>
@@ -126,7 +134,7 @@
                         <div class="row w-100 align-items-center mb-4">
                            <div class="col-md-6 text-center order-1 order-sm-0">
                               <!-- <div class="blue-circle"></div> -->
-                              <img src="./assets/images/portfolio/character/2d.jpg" />
+                              <img class="rounded shadow-lg" src="./assets/images/portfolio/character/2d.jpg" />
                            </div>
                            <div class="col-md-6 order-0 order-sm-1 mb-sm-0 mb-4">
                               <h4 class="secondary-hdng">2D Illustrations</h4>
@@ -139,7 +147,7 @@
                               <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nisl enim, mi sagittis facilisi. Mauris, ultricies in diam auctor vitae tincidunt.</p>
                            </div>
                            <div class="col-md-6 text-center">
-                              <img src="./assets/images/portfolio/3d/character 3d.jpg" />
+                              <img class="rounded shadow-lg" src="./assets/images/portfolio/3d/character 3d.jpg" />
                               <!-- <div class="blue-circle"></div> -->
                            </div>
                         </div>
@@ -148,7 +156,7 @@
                         <div class="row w-100 align-items-center mb-4">
                            <div class="col-md-6 text-center order-1 order-sm-0">
                               <!-- <div class="blue-circle"></div> -->
-                              <img src="./assets/images/portfolio/character/2d.jpg" />
+                              <img class="rounded shadow-lg" src="./assets/images/portfolio/character/2d.jpg" />
                            </div>
                            <div class="col-md-6 order-0 order-sm-1 mb-sm-0 mb-4">
                               <h4 class="secondary-hdng">2D Illustrations</h4>
@@ -161,7 +169,7 @@
                               <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nisl enim, mi sagittis facilisi. Mauris, ultricies in diam auctor vitae tincidunt.</p>
                            </div>
                            <div class="col-md-6 text-center">
-                              <img src="./assets/images/portfolio/3d/character 3d.jpg" />
+                              <img class="rounded shadow-lg" src="./assets/images/portfolio/3d/character 3d.jpg" />
                               <!-- <div class="blue-circle"></div> -->
                            </div>
                         </div>
@@ -173,7 +181,7 @@
       </section>
 
 
-      <section class="offer-section section-padding">
+      <section id="services" class="offer-section section-padding">
          <div class="container">
             <div class="row justify-content-center">
                <div class="col-md-7 wow bounceIn text-center">
@@ -333,7 +341,7 @@
          </div>
       </section>
 
-      <section class="customize-plan-section">
+      <section id="styles" class="customize-plan-section">
          <div class="container">
             <div class="row justify-content-center align-items-end mb-5">
                <div class="col-md-7 wow bounceIn ">
@@ -363,7 +371,7 @@
          </div>
       </section>
 
-      <section class="package-section section-padding position-relative">
+      <section id="price" class="package-section section-padding position-relative">
          <div class="container">
             <div class="row justify-content-center">
                <div class="col-md-8 wow bounceIn text-center">
@@ -477,7 +485,7 @@
          </div>
       </section>
 
-      <section class="procedure-section section-padding position-relative">
+      <section id="process" class="procedure-section section-padding position-relative">
          <div class="container">
             <div class="row justify-content-center">
                <div class="col-md-8 wow bounceIn text-center mb-5">
@@ -543,7 +551,7 @@
          </div>
       </section>
 
-      <section class="portfolio-section section-padding">
+      <section id="portfolio" class="portfolio-section section-padding">
          <div class="container">
             <div class="row justify-content-center align-items-end">
                <div class="col-md-6 wow bounceIn">
@@ -551,35 +559,45 @@
                   <p class="sub-para pb-3">Our extensive Portfolio is just a glimpse of our diverse artistic range!  </p>
                </div>
                <div class="col-md-3 px-sm-2 px-4 mb-3">
-                  <!-- <figure class='px-2'>
-                     <img src='./assets/images/portfolio/character/character 0.jpg' width='100%' />
-                  </figure> -->
-                  <div class="portfolio-dummycard"></div>
+                  <figure class='px-2'>
+                     <img src='./assets/images/partfolio-mid/01.jpg' width='100%' />
+                  </figure>
                </div>
                <div class="col-md-3 px-sm-2 px-4 mb-3">
-                  <!-- <figure class='px-2'>
-                     <img src='./assets/images/portfolio/character/character 0.jpg' width='100%' />
-                  </figure> -->
-                  <div class="portfolio-dummycard"></div>
+                  <figure class='px-2'>
+                     <img src='./assets/images/partfolio-mid/02.jpg' width='100%' />
+                  </figure>
                </div>
                <div class="col-md-3 px-sm-2 px-4 mb-3">
-                  <div class="portfolio-dummycard"></div>
+                  <figure class='px-2'>
+                     <img src='./assets/images/partfolio-mid/03.jpg' width='100%' />
+                  </figure>
                </div>
                <div class="col-md-3 px-sm-2 px-4 mb-3">
-                  <div class="portfolio-dummycard"></div>
-               </div>
-               <div class="col-md-6 px-sm-2 px-4 mb-3">
-                  <div class="portfolio-dummycard"></div>
-               </div>
-               <div class="col-md-6 px-sm-2 px-4 mb-3">
-                  <div class="portfolio-dummycard"></div>
+                  <figure class='px-2'>
+                     <img src='./assets/images/partfolio-mid/04.jpg' width='100%' />
+                  </figure>
                </div>
                <div class="col-md-3 px-sm-2 px-4 mb-3">
-                  <div class="portfolio-dummycard"></div>
+                  <figure class='px-2'>
+                     <img src='./assets/images/partfolio-mid/05.jpg' width='100%' />
+                  </figure>
                </div>
                <div class="col-md-3 px-sm-2 px-4 mb-3">
-                  <div class="portfolio-dummycard"></div>
+                  <figure class='px-2'>
+                     <img src='./assets/images/partfolio-mid/06.jpg' width='100%' />
+                  </figure>
                </div>
+               <!-- <div class="col-md-3 px-sm-2 px-4 mb-3">
+                  <figure class='px-2'>
+                     <img src='./assets/images/partfolio-mid/02.jpg' width='100%' />
+                  </figure>
+               </div>
+               <div class="col-md-3 px-sm-2 px-4 mb-3">
+                  <figure class='px-2'>
+                     <img src='./assets/images/partfolio-mid/02.jpg' width='100%' />
+                  </figure>
+               </div> -->
             </div>
          </div>
       </section>
@@ -696,7 +714,7 @@
          </div>
       </section>
 
-      <section class="contact-section section-padding position-relative">
+      <section id="contact" class="contact-section section-padding position-relative">
          <div class="container">
             <div class="row justify-content-center">
                <div class="col-md-6 wow bounceIn text-left">
