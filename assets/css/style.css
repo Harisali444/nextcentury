@@ -6,7 +6,9 @@
     font-weight: bold;
     font-style: normal;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 
 :root {
     --praimry-color: #1C75BC;
@@ -1218,7 +1220,11 @@ span.text-bg-white {
     padding-left: 30px;
     line-height: 1.3;
 }
-
+.rounded-shadow{
+    border-radius: 30px;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, .4)!important;
+    margin-bottom: 25px;   
+}
 .note_list {
     position: relative;
 }
